@@ -116,14 +116,15 @@ nav{
 	background: #000000;
 	color: white;
 	display: flex;
+	flex-direction: row;
 	position:absolute;
 	bottom: 0px;
 }
 
 div[class^='bloque']{
-	width: 25%;
+	/*width: 25%;*/
 	padding: 1%;
-	background-color: #000000;
+	flex-grow: 1;
 }
 
 
@@ -155,4 +156,12 @@ div[class^='bloque']{
 		text-align: center;
 	}
 	
+	.pie{
+		flex-direction: column;
+	}
+
+	div[class^='bloque']{
+		text-align: center;
+	}
+
 }
